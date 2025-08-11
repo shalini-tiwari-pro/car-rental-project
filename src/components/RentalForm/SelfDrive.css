@@ -1,0 +1,143 @@
+/* ========== MAIN CONTAINER ========== */
+.self-drive-form-main-div {
+    width: 100%;
+    padding: 2rem 1rem;
+   
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* ========== FORM BOX ========== */
+.self-drive-form-div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+  
+    box-sizing: border-box;
+   
+}
+
+/* ========== TABLE STYLING ========== */
+.self-drive-form-div form table {
+    width:700px;
+    border-collapse: collapse;
+
+}
+
+.self-drive-form-div form td {
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    color: #333;
+    vertical-align: top;
+}
+
+.self-drive-form-div form td:first-child {
+    font-weight: 500;
+    width: 40%;
+    padding-right: 10px;
+}
+
+/* ========== INPUT STYLES ========== */
+input[type="file"],
+input[type="datetime-local"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.2s border ease;
+}
+
+input[type="file"]:focus,
+input[type="datetime-local"]:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+/* ========== CHECKBOX ========== */
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+}
+
+/* ========== SECTION TITLES ========== */
+strong {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0 0.5rem;
+    color: #222;
+}
+
+/* ========== RESPONSIVENESS ========== */
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .self-drive-form-div {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .self-drive-form-div form td {
+        font-size: 0.95rem;
+    }
+
+    input[type="file"],
+    input[type="datetime-local"],
+    select {
+        font-size: 0.95rem;
+    }
+        .self-drive-form-div form table {
+            width: 600px;
+            border-collapse: collapse;
+    
+        }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .self-drive-form-div {
+        padding: 1rem;
+       
+      
+    }
+        .self-drive-form-div form table {
+            width: 250px;
+            border-collapse: collapse;
+    
+        }
+
+    /* Stack table rows vertically */
+    .self-drive-form-div form tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .self-drive-form-div form td {
+        width: 100% !important;
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    input[type="file"],
+    input[type="datetime-local"],
+    select {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    strong {
+        font-size: 1rem;
+    }
+}

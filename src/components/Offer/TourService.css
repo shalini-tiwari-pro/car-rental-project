@@ -1,0 +1,152 @@
+/* ===== Original Styles (Unchanged) ===== */
+.tour-service-main-div {
+    width: 90%;
+    margin: auto;
+}
+
+.our-tour-services-include-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 200px;
+}
+
+.our-tour-services-include-div div {
+    border: 1px solid rgb(170, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+}
+
+.top-destinations-covered-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 200px;
+}
+
+.top-destinations-covered-div div {
+    border: 1px solid rgb(170, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+}
+
+.why-choose-zikrme-tour-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 200px;
+}
+
+.why-choose-zikrme-tour-div div {
+    border: 1px solid rgb(170, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+}
+
+.popular-tour-type-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 200px;
+}
+
+.popular-tour-type-div div {
+    border: 1px solid rgb(170, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+}
+
+.whatsapp-link-div {
+    border: 1px solid rgb(245, 126, 126);
+    width: 300px;
+    background-color: #eb7575;
+    border-radius: 50px;
+    margin: auto;
+}
+
+.whatsapp-link {
+    text-decoration: none;
+    color: white;
+}
+
+.how-to-book-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.how-to-book-div div:hover {
+    background-color: #ee4e4e;
+}
+
+
+/* ===== Responsive Styles (Newly Added) ===== */
+
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+
+    .our-tour-services-include-div,
+    .top-destinations-covered-div,
+    .why-choose-zikrme-tour-div,
+    .popular-tour-type-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobiles (≤768px) */
+@media screen and (max-width: 768px) {
+
+    .our-tour-services-include-div,
+    .top-destinations-covered-div,
+    .why-choose-zikrme-tour-div,
+    .popular-tour-type-div {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        height: auto;
+    }
+
+    .our-tour-services-include-div div,
+    .top-destinations-covered-div div,
+    .why-choose-zikrme-tour-div div,
+    .popular-tour-type-div div {
+        width: 100%;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .whatsapp-link-div {
+        width: 90%;
+    }
+
+    .how-to-book-div {
+        padding: 0 10px;
+    }
+}

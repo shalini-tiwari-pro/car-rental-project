@@ -1,0 +1,116 @@
+/* ───── MAIN WRAPPER STYLING ───── */
+.with-driver-form-main-div {
+  width:100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.with-driver-form-div {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+/* ───── FORM & TABLE STYLING ───── */
+form {
+    width: 100%;
+}
+
+.with-driver-form-div form table {
+    width:700px;
+    border-collapse: collapse;
+    border:1px solid rgb(223, 221, 221)
+}
+
+td {
+    padding: 0.5rem;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.text,
+input[type="datetime-local"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea.message-box {
+    resize: vertical;
+    height: 60px;
+}
+
+/* Optional: Better field labels */
+label {
+    margin-top: 0.4rem;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+/* ───── RESPONSIVE STYLING ───── */
+
+@media (max-width: 1024px) {
+    .with-driver-form-div {
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .with-driver-form-div {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 1.2rem;
+    }
+
+    td[colspan="2"] {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding-bottom: 0.5rem;
+    }
+        .with-driver-form-div form table {
+            width: 600px;
+            border-collapse: collapse;
+            border: 1px solid rgb(223, 221, 221)
+        }
+       
+}
+
+@media (max-width: 480px) {
+    .with-driver-form-div {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+                 .with-driver-form-div form table {
+                     width: 250px;
+                     border-collapse: collapse;
+                     border: 1px solid rgb(223, 221, 221)
+                 }
+}

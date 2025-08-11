@@ -1,0 +1,225 @@
+/* ========== DEFAULT DESKTOP VIEW ========== */
+.explorepage-main-div {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: auto;
+    overflow: hidden;
+    height: 300px;
+    
+   
+}
+
+/* Single Taxi Card */
+.taxicard {
+    width: 230px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.taxicard:hover {
+    box-shadow: rgba(39, 38, 38, 0.35) 0px 5px 15px;
+}
+
+.taxi-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.taxicard p:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+}
+
+.taxicard p:nth-child(3) {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(106, 106, 106);
+}
+
+.taxi-btn {
+    padding: 11px 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin: 5px auto 0;
+    display: block;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+    cursor: pointer;
+}
+
+.taxi-btn:hover {
+    box-shadow: rgba(39, 38, 38, 0.35) 0px 5px 15px;
+}
+
+/* ========== HEADING & EXPLORE BUTTON ========== */
+
+.explore-heading-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     width:750px;
+  
+    padding: 0 1rem;
+    gap: 10px;
+   margin-top:20px ;
+    margin-left: 37%;
+}
+
+.explore-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.explore-more-btn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 25px;
+    background-color: rgb(225, 139, 18);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.explore-more-btn:hover {
+    background-color: rgb(201, 124, 16);
+}
+
+/* ========== TABLET RESPONSIVE ========== */
+@media (max-width: 1024px) {
+    .explorepage-main-div {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px 0;
+       
+    }
+
+    .taxicard {
+        min-width: 450px;
+        margin-right: 16px;
+        scroll-snap-align: start;
+       
+    }
+
+    .taxi-img {
+        height: 140px;
+    }
+
+
+    .heading-div {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .explore-more-btn {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+          .explore-heading-div {
+    
+              flex-direction: row;
+    
+              width: 560px;
+              margin-left: 40%;
+    
+    
+    
+              margin-bottom: 5px;
+          }
+}
+
+/* ========== MOBILE RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .explorepage-main-div {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 10px 0;
+        gap: 0;
+        height:450px
+    }
+
+    .taxicard {
+        min-width: 100%;
+        margin-right: 12px;
+        scroll-snap-align: center;
+        height:450px
+    }
+
+    .taxi-img {
+        height: 300px;
+    }
+
+         .explore-heading-div {
+    
+             flex-direction: row;
+    
+             width: 450px;
+             margin-left: 40%;
+             padding: 1px 5px 1px 5px;
+             gap: 2px;
+    
+             margin-bottom: 5px;
+         }
+
+    .explore-more-btn {
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+        display: block;
+        font-size: 13px;
+    }
+    
+}
+
+/* ========== SMALL PHONES ========== */
+@media (max-width: 480px) {
+    .taxi-img {
+        height: 120px;
+    }
+
+    .taxi-btn {
+        width: 90%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .explore-heading-div{
+        flex-direction: column;
+          width:200px;
+          margin: auto;
+    }
+    .explore-heading {
+        font-size: 20px;
+      
+    }
+
+    .explore-more-btn {
+        font-size: 12px;
+        padding: 8px 18px;
+    }
+          .explorepage-main-div {
+             
+              height: 300px
+          }
+    
+          .taxicard {
+          
+              height: 300px
+          }
+}

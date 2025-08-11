@@ -1,0 +1,126 @@
+   .main-box {
+      width:98%;
+      margin: 30px auto;
+  }
+.explore-car-card {
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  
+}
+
+.explore-car-card:hover {
+    transform: scale(0.95);
+}
+
+.slider-image {
+   
+   
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+}
+
+.explore-car-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Optional: add space between slick-track items */
+.slick-slide {
+    padding: 0 10px;
+    /* Horizontal gap between slides */
+}/* ========== Shell ========== */
+.explore-bike-container {
+    width: 100%;
+    margin: 0 auto;
+    /* remove extra outer space */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* keeps Slick’s inner track tidy */
+    padding: 20px 0;
+}
+
+/* ========== Slick spacing ========== */
+.slick-slide,
+.slide-wrapper {
+    /* wrapper adds our own padding */
+    box-sizing: border-box;
+}
+
+.slide-wrapper {
+    padding: 0 8px;
+    /* ⟵ uniform 16 px total gap */
+}
+
+.slick-list {
+    margin: 0 -8px;
+    /* counter the padding so no card gets clipped */
+}
+
+/* ========== Card ========== */
+.explore-car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.explore-car-card:hover {
+    transform: scale(1.05);
+}
+
+/* ========== Image ========== */
+.slider-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0 0 0 / 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.explore-car-card:hover .slider-image {
+    transform: scale(1.05);
+}
+
+/* ========== Text ========== */
+.explore-car-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+/* ========== Responsive tweaks ========== */
+@media (max-width: 900px) {
+    .slider-image {
+        height: 160px;
+    }
+
+    .explore-car-name {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 540px) {
+    .slider-image {
+        height: 140px;
+    }
+
+    .explore-car-name {
+        font-size: 14px;
+    }
+}
+
+.slick-list {
+    margin: 0 -10px;
+    /* To avoid overflow from slide padding */
+} 

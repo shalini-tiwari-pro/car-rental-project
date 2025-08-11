@@ -1,0 +1,241 @@
+.privacy-policy-main-div {
+    width: 90%;
+    margin: auto;
+}
+
+.data-collection-div{
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            height: 200px;
+}
+.data-collection-div div{
+        border: 1px solid rgb(170, 168, 168);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 370px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: sans-serif;
+            font-size: 13px;
+            color: rgb(87, 86, 86);
+}
+.how-we-use-your-information-div{
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            height: 150px;
+}
+.how-we-use-your-information-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.booking-and-rentals-div{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 100px;
+}
+.booking-and-rentals-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.payments-div{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 100px;
+}
+.payments-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.cab-rentals-div{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 100px;
+}
+.cab-rentals-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.hotels-div{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 100px;
+}
+.hotels-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.user-reponsibilities-div{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 100px;
+}
+.user-reponsibilities-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.security-measures-div{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 200px;
+}
+.security-measures-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.whatsapp-link-div,
+.zikrme-link-div {
+    border: 1px solid rgb(245, 126, 126);
+    background-color: #eb7575;
+    border-radius: 50px;
+    margin: auto;
+  
+    
+    text-align: center;
+    padding:20px 30px 20px 30px;
+}
+
+
+.whatsapp-link,
+.zikrme-link {
+    text-decoration: none;
+    color: white;
+}
+.contact-support-div{
+        display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+           .contact-support-div div:hover {
+            background-color: #ee4e4e;
+        }
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablet screens (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+
+    .data-collection-div,
+    .how-we-use-your-information-div,
+    .booking-and-rentals-div,
+    .payments-div,
+    .cab-rentals-div,
+    .hotels-div,
+    .user-reponsibilities-div,
+    .security-measures-div {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .data-collection-div div,
+    .how-we-use-your-information-div div,
+    .booking-and-rentals-div div,
+    .payments-div div,
+    .cab-rentals-div div,
+    .hotels-div div,
+    .user-reponsibilities-div div,
+    .security-measures-div div {
+        width: 100%;
+        max-width: 370px;
+        margin: auto;
+    }
+}
+
+/* Mobile screens (≤ 768px) */
+@media screen and (max-width: 768px) {
+
+    .data-collection-div,
+    .how-we-use-your-information-div,
+    .booking-and-rentals-div,
+    .payments-div,
+    .cab-rentals-div,
+    .hotels-div,
+    .user-reponsibilities-div,
+    .security-measures-div {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 15px;
+    }
+
+    .data-collection-div div,
+    .how-we-use-your-information-div div,
+    .booking-and-rentals-div div,
+    .payments-div div,
+    .cab-rentals-div div,
+    .hotels-div div,
+    .user-reponsibilities-div div,
+    .security-measures-div div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .whatsapp-link-div,
+    .zikrme-link-div {
+        width: 90%;
+        padding: 15px 20px;
+    }
+}

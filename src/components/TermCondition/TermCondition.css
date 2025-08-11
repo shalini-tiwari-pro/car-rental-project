@@ -1,0 +1,148 @@
+.term-condition-main-div {
+    width: 90%;
+    margin: auto;
+}
+
+.service-offered-div{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 200px;
+}
+.service-offered-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.user-reponsibilities-div,.booking-confirmation-div,.payment-terms-div
+,.cab-div,
+.prohibited-conduct-div,
+.hotels-div,.rental-policies-div,.limitation-of-liability-div
+{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        height: 100px;
+}
+.user-reponsibilities-div div,
+.booking-confirmation-div div,.payment-terms-div div,
+.cab-div div,
+.prohibited-conduct-div div,.hotels-div div,.rental-policies-div div,.limitation-of-liability-div div{
+    border: 1px solid rgb(170, 168, 168);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 50px;
+        border-radius: 50px;
+        font-family: sans-serif;
+        font-size: 13px;
+        color: rgb(87, 86, 86);
+}
+.whatsapp-link-div,
+.zikrme-link-div {
+    border: 1px solid rgb(245, 126, 126);
+    background-color: #eb7575;
+    border-radius: 50px;
+    margin: auto;
+
+
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+}
+
+
+.whatsapp-link,
+.zikrme-link {
+    text-decoration: none;
+    color: white;
+}
+.contact-us-div{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.contact-us-div div:hover {
+    background-color: #ee4e4e;
+}
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablet screens (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+
+    .service-offered-div,
+    .user-reponsibilities-div,
+    .booking-confirmation-div,
+    .payment-terms-div,
+    .cab-div,
+    .prohibited-conduct-div,
+    .hotels-div,
+    .rental-policies-div,
+    .limitation-of-liability-div {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .service-offered-div div,
+    .user-reponsibilities-div div,
+    .booking-confirmation-div div,
+    .payment-terms-div div,
+    .cab-div div,
+    .prohibited-conduct-div div,
+    .hotels-div div,
+    .rental-policies-div div,
+    .limitation-of-liability-div div {
+        width: 100%;
+        max-width: 370px;
+        margin: auto;
+    }
+}
+
+/* Mobile screens (≤ 768px) */
+@media screen and (max-width: 768px) {
+
+    .service-offered-div,
+    .user-reponsibilities-div,
+    .booking-confirmation-div,
+    .payment-terms-div,
+    .cab-div,
+    .prohibited-conduct-div,
+    .hotels-div,
+    .rental-policies-div,
+    .limitation-of-liability-div {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        height: auto;
+    }
+
+    .service-offered-div div,
+    .user-reponsibilities-div div,
+    .booking-confirmation-div div,
+    .payment-terms-div div,
+    .cab-div div,
+    .prohibited-conduct-div div,
+    .hotels-div div,
+    .rental-policies-div div,
+    .limitation-of-liability-div div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .whatsapp-link-div,
+    .zikrme-link-div {
+        width: 90%;
+        padding: 12px 18px;
+    }
+
+    .contact-us-div {
+        align-items: center;
+    }
+}

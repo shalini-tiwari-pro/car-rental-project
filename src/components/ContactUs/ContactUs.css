@@ -1,0 +1,126 @@
+/* ─────────── BASE STYLES ─────────── */
+.contact-us-main-div {
+    background: linear-gradient(to bottom, #b5b9aa, #9fb4d2);
+    padding: 3rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+ 
+}
+
+.contact-us-main-div h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* ─────────── FORM STYLING ─────────── */
+.contact-us-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 600px;
+   
+}
+
+.contact-us-form table {
+   
+    border-collapse: collapse;
+
+}
+
+.contact-us-form td {
+    padding: 0.5rem 0;
+}
+
+label {
+    font-weight: 600;
+    color: #444;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.contact-us-field,
+.contact-us-message-box {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.contact-us-field:focus,
+.contact-us-message-box:focus {
+    border-color: #007bff;
+}
+
+/* ─────────── BUTTON ─────────── */
+.contact-us-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-us-btn:hover {
+    background-color: #0056b3;
+}
+
+/* ─────────── RESPONSIVENESS ─────────── */
+@media (max-width: 768px) {
+    .contact-us-main-div h1 {
+        font-size: 2rem;
+    }
+
+  .contact-us-form{
+        padding: 1.5rem;
+        width:530px
+    }
+
+    .contact-us-field,
+    .contact-us-message-box {
+        font-size: 0.95rem;
+        width:450px
+    }
+
+   .contact-us-btn {
+        font-size: 0.95rem;
+       width:250px;
+       margin-left:100px
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us-main-div h1 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .contact-us-form{
+        padding: 1rem;
+       width:300px;
+    }
+
+    .contact-us-field,
+    .contact-us-message-box {
+        font-size: 0.9rem;
+        width:250px
+
+    }
+
+   .contact-us-btn {
+        font-size: 0.9rem;
+        width:200px;
+       margin-left:20px;
+    }
+}

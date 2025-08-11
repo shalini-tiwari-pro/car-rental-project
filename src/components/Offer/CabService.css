@@ -1,0 +1,144 @@
+/* ===== GLOBAL FIXES ===== */
+* {
+    box-sizing: border-box;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.cab-service-main-div {
+    width: 90%;
+    margin: auto;
+}
+
+/* ===== WHAT YOU GET SECTION ===== */
+.what-you-get-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.what-you-get-div div {
+    border: 1px solid rgb(170, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+    margin: auto;
+    width: 100%;
+    max-width: 370px;
+}
+
+/* ===== BOOKING TYPE SECTION ===== */
+.booking-type-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.booking-type-div div {
+    border: 1px solid rgb(170, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+    margin: auto;
+    width: 100%;
+    max-width: 370px;
+}
+
+/* ===== WHY ZIKRME SECTION ===== */
+.why-zikrme-cab-service-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.why-zikrme-cab-service-div div {
+    border: 1px solid rgb(170, 168, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: rgb(87, 86, 86);
+    margin: auto;
+    width: 100%;
+    max-width: 370px;
+}
+
+/* ===== LINKS ===== */
+.whatsapp-link-div,
+.zikrme-link-div {
+    border: 1px solid rgb(245, 126, 126);
+    background-color: #eb7575;
+    border-radius: 50px;
+    margin: auto;
+    width: 300px;
+}
+
+.whatsapp-link,
+.zikrme-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* ===== HOW TO BOOK ===== */
+.how-to-book-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.how-to-book-div div:hover {
+    background-color: #ee4e4e;
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+
+    .what-you-get-div,
+    .booking-type-div,
+    .why-zikrme-cab-service-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobiles (≤768px) */
+@media screen and (max-width: 768px) {
+
+    .what-you-get-div,
+    .booking-type-div,
+    .why-zikrme-cab-service-div {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .what-you-get-div div,
+    .booking-type-div div,
+    .why-zikrme-cab-service-div div {
+        width: 90%;
+    }
+
+    .whatsapp-link-div,
+    .zikrme-link-div {
+        width: 90%;
+    }
+
+    .how-to-book-div {
+        padding: 0 10px;
+    }
+}

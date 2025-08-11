@@ -1,0 +1,238 @@
+/* 
+─────────── FOOTER MAIN CONTAINER ─────────── */
+
+.footer-main-div {
+    background-color: #3e3f3f;
+    margin-top: 1rem;
+    color: white;
+    padding: 3rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+   
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+  
+    
+  
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+min-width: 350px;
+
+
+   
+    align-items: center;
+    
+   
+}
+
+.logo-img {
+    width: 120px;
+    margin-bottom: 1rem;
+    margin-left: 30px;
+    width: 240px;
+    height: 120px;
+}
+
+.footer-logo p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+
+}
+
+/* Subscribe Box */
+.subscribe-box {
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: white;
+    max-width: 300px;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 0.6rem 1rem;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.subscribe-box button {
+    background-color: #070707;
+    border: none;
+    color: white;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.subscribe-box button:hover {
+    background-color: #0492f1;
+}
+.footer-data-div{
+    display:flex;
+    
+     width:800px;
+    
+    
+    
+}
+.footer-icons {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.footer-icons p i {
+    background-color: black;
+    font-size: 25px;
+
+    padding: 5px;
+    border-radius: 50%;
+
+
+}
+.twitter-para,.blogger-para{
+    width:35px;
+    height:35px;
+    background-color: black;
+    border-radius: 50%;
+  
+}
+.twitter-logo,.blogger-logo{
+    width:25px;
+    height:25px;
+   margin-top:5px
+   
+
+}
+
+/* ─────────── INDIVIDUAL COLUMN ─────────── */
+ .sub-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+   width:300px;
+  
+    text-align:center;
+  
+
+}
+
+/* ─────────── HEADING ─────────── */
+.sub-heading {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* ─────────── PARAGRAPH LINKS ─────────── */
+.sub-div p {
+    font-size: 14px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: text-decoration 0.2s ease-in-out;
+}
+
+
+/* ─────────── ICONS ─────────── */
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.footer-icons i {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+
+/* ─────────── LINK RESET ─────────── */
+.link-tag {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ========== RESPONSIVE FOOTER STYLES ========== */
+
+/* Tablets (≤1024px) */
+@media screen and (max-width: 1024px) {
+    .footer-container {
+  
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-logo {
+        min-width: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer-data-div {
+       flex-direction: row;
+        align-items: center;
+        margin: auto;
+    }
+
+    .sub-div {
+        width: 100%;
+        max-width: 400px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .subscribe-box {
+        max-width: 100%;
+    }
+}
+
+/* Mobile Devices (≤768px) */
+@media screen and (max-width: 768px) {
+    .footer-main-div {
+        padding: 2rem 1rem;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .logo-img {
+        width: 200px;
+        height: auto;
+        margin-left: 0;
+    }
+        .footer-data-div{
+            flex-direction: column;
+        }
+
+    .subscribe-box input {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .subscribe-box button {
+        padding: 0 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+}

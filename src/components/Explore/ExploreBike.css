@@ -1,0 +1,86 @@
+/* ========== Shell ========== */
+.explore-bike-container {
+    width: 100%;
+    margin: 0 auto;
+    /* remove extra outer space */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* keeps Slick’s inner track tidy */
+    padding: 20px 0;
+}
+
+/* ========== Slick spacing ========== */
+.slick-slide,
+.slide-wrapper {
+    /* wrapper adds our own padding */
+    box-sizing: border-box;
+}
+
+.slide-wrapper {
+    padding: 0 8px;
+    /* ⟵ uniform 16 px total gap */
+}
+
+.slick-list {
+    margin: 0 -8px;
+    /* counter the padding so no card gets clipped */
+}
+
+/* ========== Card ========== */
+.bike-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.bike-card:hover {
+    transform: scale(1.05);
+}
+
+/* ========== Image ========== */
+.bike-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0 0 0 / 0.2);
+    transition: transform 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.bike-card:hover .bike-image {
+    transform: scale(1.05);
+}
+
+/* ========== Text ========== */
+.bike-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+}
+
+/* ========== Responsive tweaks ========== */
+@media (max-width: 900px) {
+    .bike-image {
+        height: 160px;
+    }
+
+    .bike-name {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 540px) {
+    .bike-image {
+        height: 140px;
+    }
+
+    .bike-name {
+        font-size: 14px;
+    }
+}

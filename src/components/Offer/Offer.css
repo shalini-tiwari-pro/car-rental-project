@@ -1,0 +1,89 @@
+.offer-main-div {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    margin: auto;
+    gap: 15px;
+    height:300px;
+   
+   
+}
+
+.offer-card {
+    width: 100%;
+    max-width: 270px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    cursor: pointer;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.offer-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(15, 16, 16);
+    font-size: 18px;
+    margin: 10px 0 15px;
+    font-family: sans-serif;
+}
+
+.offer-h1 {
+    color: rgb(1, 10, 13);
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0;
+    font-family: sans-serif;
+    margin-top:60px
+}
+@media (max-width: 1024px) {
+    .offer-main-div {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .offer-card {
+        flex: 0 0 85%;
+        scroll-snap-align: start;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .offer-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .offer-image {
+        height: 160px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .offer-h1 {
+        font-size: 22px;
+    }
+}

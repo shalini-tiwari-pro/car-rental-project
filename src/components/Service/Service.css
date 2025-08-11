@@ -1,0 +1,152 @@
+.service-main-div {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+    margin: auto;
+    gap: 10px;
+    height: 460px;
+   
+}
+
+.service-card {
+    width: 270px;
+    height: 420px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.service-image {
+    width: 270px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.service-card p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.service-card h2 {
+    text-align: center;
+    color: rgb(67, 196, 247);
+    font-size: 16px;
+}
+
+.service-h1 {
+    color: rgb(57, 190, 243);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-icons {
+    width: 250px;
+    height: auto;
+    display: flex;
+    margin: 20px auto 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-icon-card{
+    width:70px
+}
+
+.icon-image {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+
+.icon-image-div {
+    border: 1px solid rgb(28, 27, 27);
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icons p {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ========================== Responsive ========================== */
+
+/* Tablets (iPads and below) */
+@media (max-width: 1024px) {
+    .service-main-div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        height: auto;
+    }
+
+    .service-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .service-image {
+        width: 100%;
+        height: 160px;
+    }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+    .service-main-div {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        height: auto;
+    }
+
+    .service-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-image {
+        width: 100%;
+        height: 160px;
+    }
+
+    .service-icons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .icon-image-div {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon-image {
+        width: 20px;
+        height: 20px;
+    }
+
+    .service-card p {
+        font-size: 11px;
+        padding: 0 10px;
+    }
+
+    .service-h1 {
+        font-size: 20px;
+    }
+}

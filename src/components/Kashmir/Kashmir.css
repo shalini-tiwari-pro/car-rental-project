@@ -1,0 +1,126 @@
+.Kashmir-main-div {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    margin: auto;
+    gap: 15px;
+    height: auto;
+   
+}
+
+.Kashmir-main-div>div {
+    width: 300px;
+    height: 330px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgb(249, 192, 78);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    scroll-snap-align: start;
+}
+
+.data-div {
+    width: 220px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: sans-serif;
+    line-height: 30px;
+    color: rgb(42, 41, 41);
+    text-align: center;
+}
+
+.Kashmir-main-div h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.kashmir-btn {
+    margin-left: 70px;
+    width: 140px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.kashmir-btn:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.heading-line {
+    width: 200px;
+    height: 1px;
+    background-color: #757575;
+    border: none;
+    margin: 0 auto 20px;
+}
+
+.kashmir-h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* ========== Responsive for Tablet and Mobile ========== */
+@media (max-width: 1024px) {
+    .Kashmir-main-div {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 15px;
+        padding: 10px 0;
+        
+    }
+
+    .Kashmir-main-div>div {
+        width:250px;
+        flex: 0 0 50%;
+        margin:auto;
+    }
+        .kashmir-btn {
+            margin-left: 90px;
+    
+           
+        }
+}
+
+@media (max-width: 600px) {
+    .Kashmir-main-div>div {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    .data-div {
+        width: 90%;
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .kashmir-btn {
+        margin-left:80px;
+        
+        width: 130px;
+        font-size: 14px;
+    }
+
+    .kashmir-h1 {
+        font-size: 22px;
+    }
+
+    .Kashmir-main-div h2 {
+        font-size: 16px;
+    }
+}

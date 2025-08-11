@@ -1,0 +1,78 @@
+.oneway-main-div {
+  display: flex;
+  gap: 20px;
+  width: 94%;
+  margin: auto;
+  align-items: center;
+  overflow-y: auto;
+}
+.oneway-main-div div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: relative;
+}
+.oneway-main-div div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.direction-icon img {
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.direction-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(243, 243, 245);
+}
+.oto-from-input {
+  border: none;
+  outline: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  padding: 10px;
+  padding: 8px 10px 8px 20px;
+}
+
+.oto-from-input[type="text"]::placeholder {
+  font-size: 11px;
+
+  font-style: italic;
+  margin-left: 20px;
+}
+.search-icon {
+  position: absolute;
+  top: 40px;
+
+  transform: translateY(-50%);
+  color: #b7b5b5;
+  font-size: 16px;
+}
+.dropdown-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #64baf3;
+  font-size: 14px;
+}
+.pickup-date-option-div,
+.pickup-time-option-div {
+  position: relative;
+  /* <-- creates a new coordinate system */
+}
+.opickup-input {
+  border: none;
+  outline: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+  padding: 8px 10px 8px 20px;
+  width: 194px;
+}

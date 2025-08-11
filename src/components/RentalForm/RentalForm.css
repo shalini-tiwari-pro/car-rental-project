@@ -1,0 +1,172 @@
+/* ─────────── MAIN CONTAINER ─────────── */
+.rental-form-main-div {
+    background: rgb(218, 214, 214);
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rental-form-main-div h1 {
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.rental-form-main-div p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ─────────── FORM CONTAINER ─────────── */
+.rental-form-div {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 850px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+/* ─────────── FORM STYLING ─────────── */
+form .rental-form-table {
+    width: 700px;
+    border-collapse: collapse;
+}
+
+form tr {
+    margin-bottom: 1.2rem;
+}
+
+form td {
+    padding: 0.6rem 0;
+    vertical-align: top;
+}
+
+form td:first-child {
+    width: 35%;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+}
+
+/* ─────────── RADIO BUTTON STYLING ─────────── */
+.rental-type-radio {
+    margin-right: 6px;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* ─────────── SUBMIT BUTTON ─────────── */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+ form .rental-form-table {
+     width: 700px;
+     border-collapse: collapse;
+ }
+/* ─────────── RESPONSIVENESS ─────────── */
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+    .rental-form-main-div h1 {
+        font-size: 2rem;
+    }
+
+    .rental-form-main-div p {
+        font-size: 1rem;
+    }
+
+    .rental-form-div {
+        padding: 1.5rem;
+    }
+
+    .input-field {
+        font-size: 0.95rem;
+    }
+
+    .submit-btn {
+        font-size: 0.95rem;
+    }
+        form .rental-form-table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+}
+
+/* Mobiles (≤480px) */
+@media (max-width: 480px) {
+    .rental-form-main-div h1 {
+        font-size: 1.75rem;
+    }
+
+    .rental-form-main-div p {
+        font-size: 0.95rem;
+    }
+
+    .rental-form-div {
+        padding: 1rem;
+    }
+
+    form td {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    form tr {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+         form .rental-form-table {
+             width: 250px;
+             border-collapse: collapse;
+         }
+}

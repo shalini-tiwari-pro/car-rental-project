@@ -1,0 +1,102 @@
+.choose-main-div {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 1rem 0;
+}
+
+/* Cards Styling */
+.choose-main-div>.choose-card {
+    width: 290px;
+    height: 330px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Headings & Data */
+.choose-main-div h2 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.choose-data {
+    text-align: center;
+    color: rgb(158, 158, 158);
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: sans-serif;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.choose-h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+/* Icon Styling */
+.icons {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgb(231, 226, 226);
+    background-color: rgb(225, 169, 28);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 12px;
+}
+
+.icons .icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* ─────────── Responsive: Tab & Mobile ─────────── */
+@media screen and (max-width: 1024px) {
+    .choose-main-div {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .choose-main-div>.choose-card {
+        width: 100vw;
+        scroll-snap-align: start;
+        margin: 0 10px;
+    }
+
+    /* Hide scrollbar */
+    .choose-main-div::-webkit-scrollbar {
+        display: none;
+    }
+
+    .choose-main-div {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
