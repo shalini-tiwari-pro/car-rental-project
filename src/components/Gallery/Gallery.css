@@ -11,7 +11,6 @@
     border-radius: 10px;
     padding: 10px;
     transition: transform 0.3s ease-in-out;
-   
 }
 
 .gallery-card:hover {
@@ -58,16 +57,14 @@
 /* ================================
    Gallery Header + Explore Button
    ================================ */
-
 .gallery-heading-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 800px;
-     margin-left: 40%;
+    margin: 0 auto;
     padding: 0 1rem;
     gap: 10px;
-   
 }
 
 .explore-more-btn {
@@ -78,6 +75,11 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.link-tag {
+    text-decoration: none;
 }
 
 .explore-more-btn:hover {
@@ -91,9 +93,10 @@
 /* Tablets (≤1024px) */
 @media (max-width: 1024px) {
     .gallery-heading-div {
-        flex-direction: column;
-        width: 90%;
-        text-align: center;
+        flex-direction: row;
+        max-width: 560px;
+        margin: 0 auto;
+        margin-bottom: 5px;
     }
 
     .slider-imgg {
@@ -106,24 +109,17 @@
         padding: 8px 16px;
         font-size: 14px;
     }
-         .gallery-heading-div {
-    
-             flex-direction: row;
-    
-             width: 560px;
-             margin-left: 40%;
-             
-           
-    
-             margin-bottom: 5px;
-         }
 }
 
 /* Mobile devices (≤768px) */
 @media (max-width: 768px) {
     .gallery-heading-div {
-        width: 100%;
-        padding: 0 1rem;
+        flex-direction: row;
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 1px 5px;
+        gap: 2px;
+        margin-bottom: 5px;
     }
 
     .slider-imgg {
@@ -137,40 +133,41 @@
         margin: 10px auto 0;
         display: block;
         font-size: 13px;
+        text-decoration: none;
+        /* No underline on small screen */
     }
-         .gallery-heading-div {
-    
-             flex-direction: row;
-    
-             width: 450px;
-             margin-left:40%;
-             padding: 1px 5px 1px 5px;
-             gap: 2px;
-    
-             margin-bottom: 5px;
-         }
+
+    .link-tag {
+        text-decoration: none;
+        /* Remove underline from link */
+    }
 }
 
 /* Small phones (≤480px) */
 @media (max-width: 480px) {
+    .gallery-heading-div {
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 1px 5px;
+        gap: 2px;
+        margin-bottom: 5px;
+    }
+
     .slider-imgg {
         max-height: 220px;
     }
 
     .explore-more-btn {
         font-size: 12px;
-         padding:1px 5px 1px 5px;
-    
+        padding: 5px 10px;
+        text-decoration: none;
+        /* No underline on small screen */
     }
-        .gallery-heading-div {
-          
-             flex-direction: column;
-          
-             width:300px;
-            margin:auto;
-            padding: 1px 5px 1px 5px ;
-            gap:2px;
-           
-            margin-bottom: 5px;
-        }
+
+    .link-tag {
+        text-decoration: none;
+        
+        /* Remove underline from link */
+    }
 }
