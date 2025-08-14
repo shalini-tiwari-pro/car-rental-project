@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
  
 }
 
@@ -58,6 +59,7 @@
   padding: 5px 30px 5px 30px;
   background-color: white;
   position: relative;
+
 }
 
 .reviews-info-div div {
@@ -67,23 +69,27 @@
   font-weight: bold;
   font-size: 12px;
   margin: auto;
+ 
 }
 
 .reviews-info-div div div .google-logo-image,
 .app-store-logo-image {
   width: 40px;
   height: 40px;
+
 }
 
 .reviews-info-div div div {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .play-store-logo-image {
   width: 65px;
   height: 65px;
+
 }
 
 .explore-cab-btn {
@@ -116,28 +122,85 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+ 
 }
+/* 📱 Tablet view (768px - 1024px) */
+@media (max-width: 1024px) {
+  .booking-section h1 {
+    font-size: 2rem;
+  }
+
+  .reviews-info-div {
+  width: 80%;
+
+    margin: auto;
+    height: auto;
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .reviews-info-div div {
+    flex: 1;
+    min-width: 70px;
+    height: auto;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .google-logo-image,
+  .app-store-logo-image,
+  .play-store-logo-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .explore-cab-btn,
+  .explore-cab-btn:visited {
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+}
+
+/* 📱 Mobile view (up to 768px) */
 @media (max-width: 768px) {
   .booking-section h1 {
     font-size: 1.5rem;
   }
-  .reviews-info-div{
-    
-       
-        width: 330px;
-        margin: auto;
-       height:90px;
-      
-    
-       
-      padding:5px
-    }
-    .reviews-info-div div{
-     width:30px;
-      height:60px;
-  
-      font-size: 10px;
-     margin-left:3px;
- 
-    }
+
+  .reviews-info-div {
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+    height: auto;
+    padding: 4px 15px;
+    gap: 1px;
+  }
+
+  .reviews-info-div div {
+    flex: 1;
+    min-width: 30px;
+    height: auto;
+    font-size: 10px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .google-logo-image,
+  .app-store-logo-image,
+  .play-store-logo-image {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Remove underline from button */
+  .explore-cab-btn,
+  .explore-cab-btn:visited {
+    text-decoration: none !important;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size: 13px;
+  }
 }
+
